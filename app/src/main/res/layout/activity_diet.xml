@@ -1,0 +1,225 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dietTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diet Recommendation"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/title_background"
+            android:elevation="6dp"/>
+
+
+        <!-- Health Status Header -->
+        <TextView
+            android:id="@+id/healthStatusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Status: [Improved/Stable/Decline]"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:elevation="4dp" />
+
+
+
+        <!-- MORNING -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/white_rounded"
+                android:padding="20dp"
+                android:elevation="6dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:id="@+id/morningDiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suggestion will appear here"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/morningLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MORNING"
+                android:background="@drawable/label_background"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:elevation="8dp"
+                android:layout_gravity="top|center_horizontal"/>
+        </FrameLayout>
+
+        <!-- AFTERNOON -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/white_rounded"
+                android:padding="20dp"
+                android:elevation="6dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:id="@+id/afternoonDiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suggestion will appear here"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/afternoonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AFTERNOON"
+                android:background="@drawable/label_background"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:elevation="8dp"
+                android:layout_gravity="top|center_horizontal"/>
+        </FrameLayout>
+
+        <!-- EVENING -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/white_rounded"
+                android:padding="20dp"
+                android:elevation="6dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:id="@+id/eveningDiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suggestion will appear here"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/eveningLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EVENING"
+                android:background="@drawable/label_background"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:elevation="8dp"
+                android:layout_gravity="top|center_horizontal"/>
+        </FrameLayout>
+
+        <!-- NIGHT -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/white_rounded"
+                android:padding="20dp"
+                android:elevation="6dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:id="@+id/nightDiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suggestion will appear here"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nightLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIGHT"
+                android:background="@drawable/label_background"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:elevation="8dp"
+                android:layout_gravity="top|center_horizontal"/>
+        </FrameLayout>
+
+        <!-- Quotation -->
+        <TextView
+            android:id="@+id/quoteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="“Your health is an investment, not an expense.”"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:textColor="#2E7D32"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

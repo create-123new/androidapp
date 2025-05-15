@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HEALTH Mate</string>
+    <string name="chat_history">Chat message history</string>
+    <string-array name="wbc_units">
+        <item>cells/mcL</item>
+        <item>cells/mm³</item>
+        <item>x10³/µL</item>
+    </string-array>
+
+    <string-array name="lymph_units">
+        <item>cells/mcL</item>
+        <item>cells/mm³</item>
+        <item>x10³/µL</item>
+    </string-array>
+</resources>

@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F0FFF0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:clipToPadding="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFFFFF">
+
+        <!-- Image Preview -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Preview"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/reportPreviewImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:background="#E8F5E9"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Report Preview" />
+
+        <!-- WBC Input with Unit Spinner -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/wbcInput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#2E7D32"
+                android:hint="WBC Count"
+                android:inputType="numberDecimal"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/wbcUnitSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:entries="@array/wbc_units" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛈 Also known as: White Blood Cells, WBCs"
+            android:textColor="#4CAF50"
+            android:textSize="12sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Lymphocyte Absolute (Abs) Input with Unit Spinner -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp">
+
+            <EditText
+                android:id="@+id/lymphAbsInput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:hint="Lymphocyte Absolute (Abs)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="#2E7D32"
+                android:textColor="#000000"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="40dp"/>
+
+            <Spinner
+                android:id="@+id/lymphAbsUnitSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:entries="@array/lymph_units"
+                android:layout_marginTop="5dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛈 May appear as: Lymph #, Lymphocytes x10³"
+            android:textColor="#4CAF50"
+            android:textSize="12sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Lymphocyte Percentage Input -->
+        <EditText
+            android:id="@+id/lymphPercentInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Lymphocyte Percentage (%)"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛈 Sometimes shown as: Lymph %, Relative Lymphocytes"
+            android:textColor="#4CAF50"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#2E7D32"
+            android:padding="12dp"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+

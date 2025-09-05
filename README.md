@@ -35,56 +35,56 @@ Machine Learning:
      CD4/CD8 trend prediction
 
      Hiv Stage Detection
-
-# AIDS-Tracker-Management/
-│
-
-├── app/ 
-
-│   ├── java/com/example/aidsapp/
-
-│   │   ├── MainActivity.java
-
-│   │   ├── LoginActivity.java
-
-│   │   ├── SignupActivity.java
-
-│   │   ├── UploadActivity.java
-
-│   │   ├── ResultActivity.java
-
-│   │   ├── ProgressActivity.java
-
-│   │   ├── ProfileActivity.java
-
-│   │   ├── DatabaseHelper.java
-
-│   │   ├── ProgressChartActivity.java
-
-│   │   └── ChatbotActivity.java
-
-│   └── res/layout/           
-
-│
-
-├── backend/                  
-
-│   ├── main.py               
-
-│   ├── models/               
-
-│   └── database/             
-
-│
-
-├── ml_models/                
-
-│   ├── hiv_stage_model.pkl
-
-│   └── cd4_prediction_model.pkl
-
-│
-
-└── README.md                
+     
 
 # Screenshots of project 
+
+
+Home Page
+
+
+![home page](aids-homepage.png)
+
+
+Login Page
+
+
+![Login](aids-login.png)
+
+
+Signup Page
+
+
+![Signup](aids-signup.png)
+
+
+Upload Page
+
+
+![Upload](aids-upload.png)
+
+
+Extract Info. Page
+
+
+![Extract](aids-extract.png)
+
+
+Chart Page
+
+
+![Chart](aids-tracker.png)
+
+
+Chatbot
+
+
+![Chatbot](aids-chatbot.png)
+
+
+Diet Page
+
+
+![diet](aids-diet.png)
+
+
